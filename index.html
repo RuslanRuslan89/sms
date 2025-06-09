@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMS Discount - Эффективные SMS-рассылки</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Подключаем секции -->
+  <section id="hero"></section>
+  <section id="features"></section>
+  <section id="analytics"></section>
+  <section id="pricing"></section>
+  <section id="testimonials"></section>
+  <section id="contact"></section>
 
+  <!-- Подключение компонентов -->
+  <template id="card-template">
+    <div class="card"><slot></slot></div>
+  </template>
+
+  <template id="chart-template">
+    <canvas class="chart-canvas"></canvas>
+  </template>
+
+  <template id="slider-template">
+    <input type="range" min="0" max="100" value="50" class="slider" />
+    <span>Эффективность: <span class="value">50%</span></span>
+  </template>
+
+  <footer>
+    <p>&copy; 2025 SMS Discount. Все права защищены.</p>
+  </footer>
+</body>
+</html>
